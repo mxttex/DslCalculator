@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DslCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        ResizeMode="NoResize"
+        Title="MainWindow" Height="600" Width="400">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*" ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
 
+        <Label Margin="0" Width="400" Background="CornflowerBlue" FontSize="28" FontStyle="Oblique" FontWeight="Bold" HorizontalContentAlignment="Center">DSL CALCULATOR</Label>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Grid.Row="1">
+            <Label>Valore Iniziale: </Label>
+        </StackPanel>
+    
     </Grid>
 </Window>
